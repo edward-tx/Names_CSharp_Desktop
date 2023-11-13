@@ -29,7 +29,7 @@ namespace Names
         {
             if (!string.IsNullOrWhiteSpace(txtName.Text))
             {
-                if (lstNames.SelectedItem != null)
+                if (lstNames.SelectedItem != null && !lstNames.Items.Contains(txtName.Text))
                 {
                     // Replace the text of the selected item with the edited text
                     int selectedIndex = lstNames.SelectedIndex;
